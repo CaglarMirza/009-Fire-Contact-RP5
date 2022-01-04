@@ -50,7 +50,7 @@ export const deleteInfo = (id) => {
 export const updateInfo = (info) => {
   const db = getDatabase();
   // const newUserKey = push(child(ref(db), "contact/")).key;
-  const newUserKey = push(child(ref(db, "contact/" + info.id))).key;
+  const newUserKey = push(child(ref(db), "contact/")).key;
   const updates = {};
   updates["contact/" + newUserKey] = info;
   remove(ref(db, "contact/" + info.id))
