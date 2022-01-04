@@ -60,7 +60,7 @@ const FormComponent = ({ info, setInfo, handleFormSubmit }) => {
               options={options}
               onChange={handleOptionChange}
               placeholder="Gender"
-              name="gender"
+              // name="gender"
               fluid
               selection
               value={info.gender.toUpperCase()}
